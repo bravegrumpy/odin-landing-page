@@ -2,31 +2,38 @@
 
 :root {
     --radius: 10px;
-    --dark-background-color: #1F2937;
-    --dark-text-color: #F9FAF8;
+    --dark-background-color: #111f13;
+    --dark-text-color: #F7F7FF;
+    --green: #111f13;
+    --white: #F7F7FF;
+    --grey: #757780;
+    --yellow: #F0F757;
+    --purple: #5A0B4D;
     --hero-secondary-text-color: #E5E7Eb;
     --hero-main-text-color: #F9FAF8;
     --quote-section-background-color: #E5E7EB;
     --quote-section-text-color: #1F2937;
-    --accent-color: #3882F6;
+    --accent-color: #5A0B4D;
     --info-header-text: #1F2937;
+    --white-background: #f0f3d8;
 }
 
 body {
     font-family: "Roboto";
     width: 93vw;
+    background-color: var(--white-background);
 }
 
 button {
-    font-family: "Roboto";
     font-size: 16px;
     box-sizing: border-box;
     box-shadow: none;
     border: none;
-    background-color: #3882F6;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--dark-text-color);
     padding: 10px 50px;
     border-radius: var(--radius);
+    box-shadow: -5px 5px var(--dark-text-color);
 }
 
 button:hover, button:active {
@@ -40,6 +47,10 @@ ul {
 }
 a {
     text-decoration: none;
+}
+
+.hero a, .header a, .footer a {
+    color: var(--yellow);
 }
 
 .main {
@@ -74,6 +85,9 @@ a {
 }
 .hero-image {
     background-color: #6D747D;
+    border-radius: var(--radius);
+    border: 2px solid var(--yellow);
+    box-shadow: -10px 10px var(--accent-color);
     width: 525px;
     height: 240px;
     display: flex;
@@ -159,6 +173,7 @@ a {
     height: 150px;
     border-radius: var(--radius);
     border: 4px solid var(--accent-color);
+    box-shadow: 10px 10px var(--accent-color);
     flex: 1;
     flex-basis: 150px;
 }
@@ -233,4 +248,41 @@ a {
     align-items: center;
     font-size: 18px;
     color: var(--hero-secondary-text-color);
+}
+
+.modal {
+    width: 92vw;
+    height: 90vh;
+    margin-left: 4vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: oklch(65.769% 0.06503 198.362 / 0.479);
+    position: absolute;
+    top: 0px;
+}
+
+.modal dialog {
+    border: 5px solid var(--accent-color);
+    border-radius: var(--radius);
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: var(--grey);
+    color: var(--yellow);
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
 }
