@@ -51,14 +51,7 @@ a {
 .section {
     padding: 50px;
     width: 100%;
-}
-
-.hero {
-    background-color: var(--dark-background-color);
-    color: var(--dark-text-color);
     display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 .header a {
     color: var(--hero-secondary-text-color);
@@ -72,6 +65,17 @@ a {
     color: var(--hero-main-text-color);
     font-weight: 900;
     align-self: stretch;
+}
+.hero {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+    flex-direction: column;
+    gap: 50px;
+}
+.hero-image {
+    border-radius: var(--radius);
+    border: 5px solid var(--accent-color);
+    box-shadow: 10px 10px var(--dark-text-color);
 }
 .links {
     display: flex;
@@ -112,7 +116,6 @@ a {
 }
 
 .info {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -157,4 +160,72 @@ a {
 
 .quote {
     background-color: var(--quote-section-background-color);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 1000px;
+    flex-shrink: 1;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: var(--quote-section-text-color);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-attribution {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    align-self: flex-end;
+}
+
+.action {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    box-sizing: border-box;
+    flex-basis: 60%;
+    background-color: var(--accent-color);
+    border-radius: var(--radius);
+    padding: 30px 50px;
+    color: var(--dark-text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+
+.action-text {
+    flex-grow: 0;
+    flex-basis: 50%;
+}
+.action-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.action-button {
+    border: 2px solid white;
+}
+
+.footer {
+    background-color: var(--dark-background-color);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: var(--hero-secondary-text-color);
 }
