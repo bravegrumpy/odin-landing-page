@@ -39,6 +39,12 @@ a {
     text-decoration: none;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .section {
     padding: 50px;
 }
@@ -50,16 +56,18 @@ a {
     flex-direction: column;
     gap: 50px;
 }
-.hero a {
+.header a {
     color: var(--hero-secondary-text-color);
 }
 .header {
+    background-color: var(--dark-background-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 24px;
     color: var(--hero-main-text-color);
     font-weight: 900;
+    align-self: stretch;
 }
 .links {
     display: flex;
@@ -67,6 +75,7 @@ a {
     justify-content: flex-end;
     gap: 25px;
     font-weight: 300;
+    color: var(--hero-secondary-text-color);
 }
 .hero-main {
     display: flex;
@@ -74,4 +83,24 @@ a {
     gap: 16px;
     justify-content: center;
     align-items: center;
+}
+
+.hero-left, .hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.hero-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    color: var(--dark-text-color);
+    font-weight: 900;
+}
+
+.hero-left p {
+    font-size: 18px;
 }
