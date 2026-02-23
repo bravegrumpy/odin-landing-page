@@ -292,7 +292,8 @@ a {
 }
 
 .dialog-bg {
-    max-width: 90%;
-    max-height: 90%;
+    display: none;
+    max-width: 500px;
+    max-height: 300px;
     margin: 0px auto;
 }
