@@ -89,6 +89,8 @@ a {
     border-radius: var(--radius);
     border: 2px solid var(--yellow);
     box-shadow: -10px 10px var(--accent-color);
+    flex-basis: 525px;
+    flex-shrink: 1;
     max-width: 525px;
     max-height: 240px;
     display: flex;
@@ -111,6 +113,7 @@ a {
     gap: 100px;
     justify-content: center;
     align-items: center;
+    flex-wrP: wrap;
 }
 
 .hero-left, .hero-right {
