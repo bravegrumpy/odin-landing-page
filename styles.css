@@ -260,6 +260,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: oklch(65.769% 0.06503 198.362 / 0.479);
+    backdrop-filter: blur(16px);
     position: absolute;
     top: 0px;
 }
