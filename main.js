@@ -21,6 +21,6 @@ function hideModal() {
     document.documentElement.style = undefined;
     const main = document.getElementById("main");
     main.style = undefined;
-    const dialogBG = document.getElementById("dialog-bg");
-    dialogBG.style.display = "none";
+    // const dialogBG = document.getElementById("dialog-bg");
+    // dialogBG.style.display = "none";
 }
