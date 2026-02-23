@@ -4,8 +4,8 @@ function showModal() {
     const dialog = document.querySelector("dialog");
     dialog.open = true;
     document.documentElement.style.overflow = "hidden";
-    const main = document.getElementById("main");
-    main.style.display = "none";
+    // const main = document.getElementById("main");
+    // main.style.display = "none";
 }
 
 function hideModal() {
@@ -14,6 +14,6 @@ function hideModal() {
     const dialog = document.querySelector("dialog");
     dialog.open = false;
     document.documentElement.style = undefined;
-    const main = document.getElementById("main");
-    main.style = undefined;
+    // const main = document.getElementById("main");
+    // main.style = undefined;
 }
