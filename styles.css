@@ -290,3 +290,9 @@ a {
     align-items: center;
     gap: 50px;
 }
+
+.dialog-bg {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 0px auto;
+}
