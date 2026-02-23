@@ -10,7 +10,7 @@ function showModal() {
     // main.scrollTo = 0;
     // main.style.overflow = "hidden"
     const dialogBG = document.getElementById("dialog-bg");
-    dialogBG.style = undefined;
+    dialogBG.style.display = "block";
 }
 
 function hideModal() {
