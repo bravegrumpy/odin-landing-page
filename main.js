@@ -6,9 +6,11 @@ function showModal() {
     // document.documentElement.scrollTo = 0;
     document.documentElement.style.overflow = "hidden";
     const main = document.getElementById("main");
-    // main.style.display = "none";
-    main.scrollTo = 0;
-    main.style.overflow = "hidden"
+    main.style.display = "none";
+    // main.scrollTo = 0;
+    // main.style.overflow = "hidden"
+    const dialogBG = document.getElementById("dialog-bg");
+    dialogBG.style.display = "block";
 }
 
 function hideModal() {
@@ -19,4 +21,6 @@ function hideModal() {
     document.documentElement.style = undefined;
     const main = document.getElementById("main");
     main.style = undefined;
+    const dialogBG = document.getElementById("dialog-bg");
+    dialogBG.style = undefined;
 }
