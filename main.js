@@ -3,8 +3,8 @@ function showModal() {
     modal.style = undefined;
     const dialog = document.querySelector("dialog");
     dialog.open = true;
+    document.documentElement.scrollTo = 0;
     document.documentElement.style.overflow = "hidden";
-    window.scrollTo(0,0)
     // const main = document.getElementById("main");
     // main.style.display = "none";
 }
