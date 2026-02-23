@@ -3,10 +3,12 @@ function showModal() {
     modal.style = undefined;
     const dialog = document.querySelector("dialog");
     dialog.open = true;
-    document.documentElement.scrollTo = 0;
+    // document.documentElement.scrollTo = 0;
     document.documentElement.style.overflow = "hidden";
-    // const main = document.getElementById("main");
+    const main = document.getElementById("main");
     // main.style.display = "none";
+    main.scrollTo = 0;
+    main.style.overflow = "hidden"
 }
 
 function hideModal() {
@@ -15,6 +17,6 @@ function hideModal() {
     const dialog = document.querySelector("dialog");
     dialog.open = false;
     document.documentElement.style = undefined;
-    // const main = document.getElementById("main");
-    // main.style = undefined;
+    const main = document.getElementById("main");
+    main.style = undefined;
 }
